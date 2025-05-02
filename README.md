@@ -26,6 +26,22 @@ pip install -r requirements.txt
 python k-means.py <arquivo.csv>
 ```
 
-## Testes
+- \<arquivo.csv\>: Local do arquivo csv com os dados
 
-O primeiro teste foi feito utilizando os dados do arquivo "dados.csv"
+# Testes Realizados
+
+## Primeiro Teste
+
+O primeiro teste foi realizado com o conjunto de dados presente no arquivo `dados.csv`.
+
+![Dados1](https://github.com/kenjiThiago/Teste_Kmeans/blob/main/imagens/dados.png)
+
+### Resultados
+
+![Teste1](https://github.com/kenjiThiago/Teste_Kmeans/blob/main/imagens/dados_resultado.png)
+
+`media_geral_silhouette`: 0.7527
+
+O algoritmo K-Means conseguiu identificar os grupos com relativa facilidade,
+separando bem os padrões presentes nos dados.  A visualização dos clusters
+revelou uma boa correspondência com as classes reais.
