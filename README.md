@@ -20,3 +20,12 @@ source .venv/bin/activate
 ```sh
 pip install -r requirements.txt
 ```
+
+### Roda o código
+```sh
+python k-means.py <arquivo.csv>
+```
+
+## Testes
+
+O primeiro teste foi feito utilizando os dados do arquivo "dados.csv"
