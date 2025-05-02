@@ -78,6 +78,7 @@ arquivo_csv = args.pop()
 
 dados = pd.read_csv(arquivo_csv, header=None)
 dados = prepara_dados(dados)
+classes_unicas = dados["Classe"].unique()
 
 plot_dados(dados)
-kmeans(dados, 15, 12345, 100)
+kmeans(dados, len(classes_unicas), 12345, 100)
