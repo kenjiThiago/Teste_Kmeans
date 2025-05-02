@@ -62,3 +62,7 @@ O algoritmo K-Means conseguiu identificar os grupos presentes nos dados, embora
 tenha apresentado certa dificuldade em separar claramente todos os padrões.
 Ainda assim, a visualização dos clusters mostrou uma correspondência razoável
 com as classes reais, indicando um desempenho aceitável nesse segundo teste.
+
+## Fontes
+
+Os dados utilizados foram obtidos a partir do site `http://cs.joensuu.fi/sipu/datasets/`
