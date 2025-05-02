@@ -45,3 +45,20 @@ O primeiro teste foi realizado com o conjunto de dados presente no arquivo `dado
 O algoritmo K-Means conseguiu identificar os grupos com relativa facilidade,
 separando bem os padrões presentes nos dados.  A visualização dos clusters
 revelou uma boa correspondência com as classes reais.
+
+## Segundo Teste
+
+O segundo teste foi realizado com o conjunto de dados presente no arquivo `dados2.csv`
+
+![Dados2](https://github.com/kenjiThiago/Teste_Kmeans/blob/main/imagens/dados2.png)
+
+### Resultados
+
+![Teste2](https://github.com/kenjiThiago/Teste_Kmeans/blob/main/imagens/dados2_resultado.png)
+
+`media_geral_silhouette`: 0.5755
+
+O algoritmo K-Means conseguiu identificar os grupos presentes nos dados, embora
+tenha apresentado certa dificuldade em separar claramente todos os padrões.
+Ainda assim, a visualização dos clusters mostrou uma correspondência razoável
+com as classes reais, indicando um desempenho aceitável nesse segundo teste.
