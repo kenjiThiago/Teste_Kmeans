@@ -1,3 +1,4 @@
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -66,12 +67,17 @@ def prepara_dados(dados):
 
     return dados
 
-dados = pd.read_csv("dados.csv", header=None)
+args = sys.argv
+
+if len(args) < 2:
+    print('''python k-means.py <arquivo.csv>
+<arquivo.csv>: Local do arquivo csv com os dados''')
+    exit(1)
+
+arquivo_csv = args.pop()
+
+dados = pd.read_csv(arquivo_csv, header=None)
 dados = prepara_dados(dados)
 
-dados2 = pd.read_csv("dados2.csv", header=None)
-dados2 = prepara_dados(dados2)
-
-# plot_dados(dados)
+plot_dados(dados)
 kmeans(dados, 15, 12345, 100)
-kmeans(dados2, 31, 12345, 100)
