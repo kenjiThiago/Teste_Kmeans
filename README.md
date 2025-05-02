@@ -65,4 +65,4 @@ com as classes reais, indicando um desempenho aceitável nesse segundo teste.
 
 ## Fontes
 
-Os dados utilizados foram obtidos a partir do site [site](http://cs.joensuu.fi/sipu/datasets/)
+Os dados utilizados foram obtidos a partir do [site](http://cs.joensuu.fi/sipu/datasets/)
