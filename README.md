@@ -23,10 +23,12 @@ pip install -r requirements.txt
 
 ### Roda o código
 ```sh
-python k-means.py <arquivo.csv>
+python k-means.py <arquivo.csv> <seed> <n_init>
 ```
 
-- \<arquivo.csv\>: Local do arquivo csv com os dados
+- `<arquivo.csv>`: Caminho para o arquivo CSV com os dados
+- `<seed>`: Valor da seed aleatória para o algoritmo K-Means
+- `<n_init>`: Número de inicializações diferentes do K-Means
 
 # Testes Realizados
 

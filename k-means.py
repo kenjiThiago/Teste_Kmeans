@@ -68,17 +68,22 @@ def prepara_dados(dados):
     return dados
 
 args = sys.argv
-
-if len(args) < 2:
-    print('''python k-means.py <arquivo.csv>
-<arquivo.csv>: Local do arquivo csv com os dados''')
+if len(args) < 4:
+    print('''Uso: python k-means.py <arquivo.csv> <seed> <n_init>
+    
+<arquivo.csv>: Caminho para o arquivo CSV contendo os dados
+<seed>: Valor da Seed aleatória para o algoritmo K-Means
+<n_init>: Número de inicializações diferentes do K-Means''')
     exit(1)
 
-arquivo_csv = args.pop()
+arquivo_csv, seed_str, n_init_str = args[1:]
+
+seed = int(seed_str)
+n_init = int(n_init_str)
 
 dados = pd.read_csv(arquivo_csv, header=None)
 dados = prepara_dados(dados)
 classes_unicas = dados["Classe"].unique()
 
 plot_dados(dados)
-kmeans(dados, len(classes_unicas), 12345, 100)
+kmeans(dados, len(classes_unicas), seed, n_init)
